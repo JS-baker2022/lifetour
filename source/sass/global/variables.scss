@@ -1,0 +1,32 @@
+// Viewports
+// ---------------------------------
+$vp-320: 320px;
+$vp-768: 768px;
+$vp-1440: 1440px;
+
+
+$ff-placeholder: "Roboto Condensed", "Arial", sans-serif;
+$fz-default: 14px;
+
+// Animation
+// ---------------------------------
+
+$tf-default: ease;
+$trans-default: 0.3s $tf-default;
+
+
+// Colors
+// ---------------------------------
+
+// Default
+$color-default-black: #000000;
+$color-default-white: #ffffff;
+
+// Primary
+$color-primary-blue: #0266c1;
+$color-primary-grey: #999999;
+$color-primary-overlay: rgba(45, 56,63, 0.6);
+
+
+// Alt
+$color-alt-blue: #1c3374;
