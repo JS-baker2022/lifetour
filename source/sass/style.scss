@@ -2,3 +2,19 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+
+
+// Global
+// ---------------------------------
+
+@import "global/variables";
+@import "global/global";
+@import "global/mixins";
+@import "global/container";
+@import "global/visually-hidden";
+
+
+// Blocks
+// ---------------------------------
+
+@import "blocks/header";
