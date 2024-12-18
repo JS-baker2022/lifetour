@@ -6,16 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lifetour</title>
     <link rel="stylesheet" href="sass/style.scss">
+    <link rel="preload" href="fonts/montserrat-v26-cyrillic_latin-300.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-v26-cyrillic_latin-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-v26-cyrillic_latin-500.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-v26-cyrillic_latin-600.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-v26-cyrillic_latin-700.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-v26-cyrillic_latin-800.woff2" type="font/woff2"  as="font" crossorigin="anonymous">
   </head>
 
   <body class="page-body">
     <!-- пример использования спрайта -->
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
+    <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
     <svg>
       <use href="/__spritemap#sprite-user"></use>
-    </svg>
+    </svg> -->
     <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="header">header</div>
+    <!-- <div data-test="header">header</div>
     <div data-test="hero">hero</div>
     <div data-test="tours">tours</div>
     <div data-test="training">training</div>
@@ -24,7 +30,40 @@
     <div data-test="adv">adv</div>
     <div data-test="gallery">gallery</div>
     <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
+    <div data-test="footer">footer</div> -->
+    <header class="header" data-test="header">
+      <div class="header__wrapper header__wrapper--is-close container">
+        <button class="header__menu-button" type="button" aria-label="Переключатель отображения меню навигации"><span class="visually-hidden">Отобразить или скрыть меню.</span></button>
+        <div class="header__logo">
+          <img src="img/header/logo.svg" alt="Логотип турфирмы Lifetour." width="142" height="42">
+        </div>
+        <nav class="header__nav">
+          <ul class="header__nav-list container">
+            <li class="header__nav-list-item"><a href="#tours" class="header_nav-list-item-link">Туры</a></li>
+            <li class="header__nav-list-item"><a href="#training" class="header_nav-list-item-link">Обучение</a></li>
+            <li class="header__nav-list-item"><a href="#about" class="header_nav-list-item-link">О нас</a></li>
+            <li class="header__nav-list-item"><a href="#reviews" class="header_nav-list-item-link">Отзывы</a></li>
+            <li class="header__nav-list-item"><a href="#gallery" class="header_nav-list-item-link">Фотографии</a></li>
+            <li class="header__nav-list-item"><a href="#" class="header_nav-list-item-link">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="header__phone">
+          <a class="header__phone-link" href="tel:+78000000000" target="_blank"
+            rel="noreferrer noopener">8 800 000-00-00</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero" data-test="hero"></section>
+      <section class="tours" data-test="tours" id="tours"></section>
+      <section class="training" data-test="training" id="training"></section>
+      <section class="about" data-test="about" id="about"></section>
+      <section class="reviews" data-test="reviews" id="reviews"></section>
+      <section class="adv" data-test="adv"></section>
+      <section class="gallery" data-test="gallery" id="gallery"></section>
+      <section class="form" data-test="form"></section>
+    </main>
+    <footer class="footer" data-test="footer"></footer>
     <script type="module" src="js/main.js"></script>
   </body>
 
