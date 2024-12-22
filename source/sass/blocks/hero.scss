@@ -1,0 +1,172 @@
+.hero__wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.hero__img {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+}
+
+.hero__container {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+}
+
+.hero__img img{
+  @include centering;
+  height: 100%;
+  background-color: $color-default-img-background;
+  object-fit: cover;
+}
+
+.hero__list {
+  @include list-style-reset;
+}
+
+.hero__content-wrapper {
+  color: $color-default-white;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 60px;
+
+  @include vp-768 {
+    row-gap: 35px;
+  }
+
+  @include vp-1440 {
+    align-items: flex-start;
+  }
+}
+
+.hero__text-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 15px;
+  text-align: center;
+
+  @include vp-1440 {
+    align-items: flex-start;
+    text-align: start;
+    row-gap: 25px;
+  }
+}
+
+.hero__text-content h2 {
+  @include margin-reset;
+  @include font-setting (26px, 26px);
+  font-weight: 800;
+  padding-top: 144.5px;
+
+  @include vp-768 {
+    @include font-setting (56px, 56px);
+    padding-top: 342px;
+    width: 684px;
+  }
+
+  @include vp-1440 {
+    @include font-setting (77px, 77px);
+    padding-top: 200px;
+    width: 944px;
+  }
+}
+
+.hero__text-content p {
+  @include margin-reset;
+  @include font-setting (15px, 20px);
+
+  @include vp-768 {
+    @include font-setting (17px, 24px);
+    width: 500px;
+  }
+}
+
+.hero__btn {
+  @include font-setting (16px, 16px);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 40px;
+  background-color: $color-primary-blue;
+}
+
+.hero__about-tour {
+  display: none;
+
+  @include vp-1440 {
+    display: flex;
+    column-gap: 10px;
+    padding-top: 99px;
+  }
+}
+
+.hero__about-tour-option {
+  @include vp-1440 {
+    @include margin-reset;
+    padding-top: 14px;
+    padding-right: 20px;
+    padding-bottom: 14px;
+    padding-left: 40px;
+    outline: 1px solid $color-white-50;
+  }
+
+  &--duration {
+    @include vp-1440 {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 25px;
+        left: 25px;
+        width: 20px;
+        height: 20px;
+        -webkit-mask-image: url("/__spritemap#sprite-moon-view");
+        mask-image: url("/__spritemap#sprite-moon-view");
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-size: 12px 12px;
+        mask-size: 12px 12px;
+        -webkit-mask-position: 50% 50%;
+        mask-position: 50% 50%;
+        background-color: $color-default-white;
+
+      }
+    }
+  }
+
+  &--level {
+    @include vp-1440 {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 25px;
+        left: 25px;
+        width: 20px;
+        height: 20px;
+        -webkit-mask-image: url("/__spritemap#sprite-level-view");
+        mask-image: url("/__spritemap#sprite-level-view");
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-size: 12px 12px;
+        mask-size: 12px 12px;
+        -webkit-mask-position: 50% 50%;
+        mask-position: 50% 50%;
+        background-color: $color-default-white;
+
+      }
+    }
+
+  }
+}
