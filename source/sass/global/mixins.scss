@@ -36,3 +36,9 @@
   line-height: $lh;
   @content;
 }
+
+@mixin centering {
+  width: 100%;
+  margin: 0 auto;
+  @content;
+}
