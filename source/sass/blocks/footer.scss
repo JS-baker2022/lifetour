@@ -1,0 +1,54 @@
+.footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @include vp-768 {
+    padding-top: 40px;
+  }
+
+  @include vp-1440 {
+    padding-top: 100px;
+    padding-bottom: 32px
+  }
+}
+
+.footer__contacts-title {
+  @include margin-reset;
+  @include font-setting(22px, 22px);
+  font-weight: 800;
+  position: relative;
+
+  &::after {
+    content: attr(data-title);
+    @include font-setting(26px, 26px);
+    position: absolute;
+    font-weight: 800;
+    color: $color-black-3;
+    top: -14px;
+    left: 14px;
+  }
+
+  @include vp-768 {
+    @include font-setting(35px, 35px);
+  }
+}
+
+.footer__contacts-text p{
+  @include margin-reset;
+  @include font-setting (14px, 20px);
+
+  @include vp-768 {
+    @include font-setting (16px, 24px);
+  }
+}
+
+.footer__contacts-list {
+  @include list-style-reset;
+}
+
+.footer__contacts-map img{
+  @include centering;
+  height: 100%;
+  background-color: $color-default-img-background;
+  object-fit: cover;
+}

@@ -174,7 +174,7 @@
                   <p>Предлагаем широкий выбор туров, отвечающих различным уровням мастерства и интересам. Мы также можем адаптировать маршруты к вашим конкретным потребностям и предпочтениям, чтобы вы получили индивидуальный опыт.</p>
                 </div>
               </li>
-              <li class="adv__list-item adv__list-item--flower">
+              <li class="adv__list-item adv__list-item--leaf">
                 <div class="adv__text-content">
                   <h3>Бережное отношение к природе</h3>
                   <p>Уделяем первостепенное внимание охране окружающей среды и гарантируем, что туры оказывают минимальное воздействие на природную среду. Наша компания следует принципу «Не оставлять следов».</p>
@@ -187,7 +187,40 @@
       <section class="gallery" data-test="gallery" id="gallery"></section>
       <section class="form" data-test="form"></section>
     </main>
-    <footer class="footer" data-test="footer"></footer>
+    <footer class="footer" data-test="footer">
+      <div class="footer__contacts">
+        <h2 class="footer__contacts-title container" data-title="Контакты">Контакты</h2>
+        <div class="footer__contacts-data container">
+          <div class="footer__contacts-text">
+            <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
+          </div>
+          <ul class="footer__contacts-list">
+            <li class="footer__contacts-item footer__contacts-item--tel">
+              <h3 class="footer__contacts-item-title footer__contacts-item-title--tel">Телефон</h3>
+              <a class="footer__contacts-item-content footer__contacts-item-content--tel" href="tel:+79837454545" target="_blank" rel="noreferrer noopener">+7 983 745-45-45</a>
+            </li>
+            <li class="footer__contacts-item footer__contacts-item--mail">
+              <h3 class="footer__contacts-item-title footer__contacts-item-title--mail">Email</h3>
+              <a class="footer__contacts-item-content footer__contacts-item-content--mail" href="mailto:info@lifetour.com" target="_blank" rel="noreferrer noopener">info@lifetour.com</a>
+            </li>
+            <li class="footer__contacts-item footer__contacts-item--address">
+              <h3 class="footer__contacts-item-title footer__contacts-item-title--address">Адрес</h3>
+              <address class="footer__contacts-item-content footer__contacts-item-content--address">г. Москва, пр-т Мира, д. 14, офис 101</address>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__contacts-map">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/footer/map-desktop@1x.webp 1x, img/footer/map-desktop@2x.webp 2x" width="600" height="324">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/footer/map-tablet@1x.webp 1x, img/footer/map-tablet@2x.webp 2x" width="768" height="340">
+            <source type="image/webp" srcset="img/footer/map-mobile@1x.webp 1x, img/footer/map-mobile@2x.webp 2x" width="320" height="343">
+            <source type="image/jpg" media="(min-width: 1440px)" srcset="img/footer/map-desktop@1x.jpg 1x, img/footer/map-desktop@2x.jpg 2x" width="600" height="324">
+            <source type="image/jpg" media="(min-width: 768px)" srcset="img/footer/map-tablet@1x.jpg 1x, img/footer/map-tablet@2x.jpg 2x" width="768" height="340">
+            <img src="img/footer/map-mobile@1x.jpg" srcset="img/footer/map-mobile@2x.jpg" alt="Наш адрес на карте Москвы." width="320" height="343">
+          </picture>
+        </div>
+      </div>
+    </footer>
     <script type="module" src="js/main.js"></script>
   </body>
 
