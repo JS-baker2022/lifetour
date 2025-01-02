@@ -25,6 +25,18 @@
 .adv__title {
   @include margin-reset;
   @include font-setting(22px, 22px);
+  font-weight: 800;
+  position: relative;
+
+  &::after {
+    content: attr(data-title);
+    @include font-setting(26px, 26px);
+    position: absolute;
+    font-weight: 800;
+    color: $color-black-3;
+    top: -14px;
+    left: -17px;
+  }
 
   @include vp-768 {
     @include font-setting(35px, 35px);
@@ -37,6 +49,12 @@
   flex-direction: column;
   flex-wrap: wrap;
   row-gap: 15px;
+
+  @include vp-768 {
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+  }
 }
 
 .adv__list-item {
@@ -46,6 +64,103 @@
   padding: 82px 10px 20px;
   width: 290px;
   border: 1px solid $color-blue-10;
+
+  &--shield {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 42px;
+      height: 42px;
+      border: 1px solid $color-primary-blue;
+      top: 0;
+      left: 0;
+      transform: translate(290%, 50%);
+      background-image: url("/__spritemap#sprite-shield-view");
+      background-repeat: no-repeat;
+      background-size: 24px 24px;
+      background-position: 50% 50%;
+    }
+  }
+
+  &--crown {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 42px;
+      height: 42px;
+      border: 1px solid $color-primary-blue;
+      top: 0;
+      left: 0;
+      transform: translate(290%, 50%);
+      background-image: url("/__spritemap#sprite-crown-view");
+      background-repeat: no-repeat;
+      background-size: 24px 24px;
+      background-position: 50% 50%;
+    }
+  }
+
+  &--boot {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 42px;
+      height: 42px;
+      border: 1px solid $color-primary-blue;
+      top: 0;
+      left: 0;
+      transform: translate(290%, 50%);
+      background-image: url("/__spritemap#sprite-boot-view");
+      background-repeat: no-repeat;
+      background-size: 24px 24px;
+      background-position: 50% 50%;
+    }
+  }
+
+  &--route {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 42px;
+      height: 42px;
+      border: 1px solid $color-primary-blue;
+      top: 0;
+      left: 0;
+      transform: translate(290%, 50%);
+      background-image: url("/__spritemap#sprite-rout-view");
+      background-repeat: no-repeat;
+      background-size: 24px 24px;
+      background-position: 50% 50%;
+    }
+  }
+
+  &--leaf {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 42px;
+      height: 42px;
+      border: 1px solid $color-primary-blue;
+      top: 0;
+      left: 0;
+      transform: translate(290%, 50%);
+      background-image: url("/__spritemap#sprite-leaf-view");
+      background-repeat: no-repeat;
+      background-size: 24px 24px;
+      background-position: 50% 50%;
+    }
+  }
+
+
 }
 
 .adv__text-content {
