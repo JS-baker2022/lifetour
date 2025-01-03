@@ -126,6 +126,7 @@
   background-color: $color-primary-blue;
   padding-top: 30px;
   padding-bottom: 50px;
+  z-index: 5;
 
   @include vp-768 {
     top:82px;
